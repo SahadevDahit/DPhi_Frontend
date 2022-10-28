@@ -14,7 +14,7 @@ function Events() {
       style={{ overflow: "auto" }}
     >
       <div className="py-5">
-        <a href="" onClick={viewchallenge} className="text-decoration-none">
+        <a href="#" onClick={viewchallenge} className="text-decoration-none">
           <Card style={{ width: "20rem" }}>
             <Card.Img
               variant="top"
@@ -58,7 +58,7 @@ function Events() {
       </div>
       //2nd card
       <div className="py-5">
-        <a href="" onClick={viewchallenge} className="text-decoration-none">
+        <a href="#" onClick={viewchallenge} className="text-decoration-none">
           <Card style={{ width: "20rem" }}>
             <Card.Img
               variant="top"
@@ -102,7 +102,7 @@ function Events() {
       </div>
       //3rd card
       <div className="py-5">
-        <a href="" onClick={viewchallenge} className="text-decoration-none">
+        <a href="#" onClick={viewchallenge} className="text-decoration-none">
           <Card style={{ width: "20rem" }}>
             <Card.Img
               variant="top"
@@ -145,7 +145,7 @@ function Events() {
       </div>
       //4th card
       <div className="py-5">
-        <a href="" onClick={viewchallenge} className="text-decoration-none">
+        <a href="#" onClick={viewchallenge} className="text-decoration-none">
           <Card style={{ width: "20rem" }}>
             <Card.Img
               variant="top"
