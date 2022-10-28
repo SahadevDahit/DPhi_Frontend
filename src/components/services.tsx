@@ -6,14 +6,14 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 const services = () => {
   return (
-    <div className="w-100 h-100 bg-white pt-5">
+    <div className="w-100 h-100 bg-white py-5">
       <h1 className=" text-center">
         Why Participate in{" "}
         <span className="" style={{ color: "#44924C" }}>
           AI Challenges
         </span>
       </h1>
-      <Container className="w-100 h-100 pt-5 ">
+      <Container className="w-100 h-100 py-5 ">
         <Row className="py-4 ">
           <Col>
             <Card
