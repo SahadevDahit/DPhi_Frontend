@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Dashboard from "./components/dashboard";
+import About from "./components/about";
+import Services from "./components/services";
+import Search from "./components/search";
+import Events from "./components/events";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossOrigin="anonymous"
+      />
+      <div
+        style={{
+          backgroundColor: "#003145",
+          fontFamily: "Inter, sans-serif",
+        }}
+      >
+        <Dashboard />
+        <About />
+        <Services />
+        <Search />
+        <Events />
+      </div>
+    </>
   );
 }
 
