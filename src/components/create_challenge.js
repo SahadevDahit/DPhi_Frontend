@@ -2,7 +2,6 @@ import React from "react";
 import Image from "react-bootstrap/Image";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 const create_challenge = () => {
   return (

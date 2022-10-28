@@ -1,15 +1,20 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
+import { useNavigate } from "react-router-dom";
 
 function Events() {
+  let navigate = useNavigate();
+  const viewchallenge = () => {
+    navigate("/view");
+  };
   return (
     <div
       className="w-100 d-sm-block d-md-flex flex-wrap my-3 d-lg-flex justify-content-space align-items-center ps-5 ms-5"
       style={{ overflow: "auto" }}
     >
       <div className="py-5">
-        <a href="/view" className="text-decoration-none">
+        <a href="" onClick={viewchallenge} className="text-decoration-none">
           <Card style={{ width: "20rem" }}>
             <Card.Img
               variant="top"
@@ -53,7 +58,7 @@ function Events() {
       </div>
       //2nd card
       <div className="py-5">
-        <a href="/view" className="text-decoration-none">
+        <a href="" onClick={viewchallenge} className="text-decoration-none">
           <Card style={{ width: "20rem" }}>
             <Card.Img
               variant="top"
@@ -97,7 +102,7 @@ function Events() {
       </div>
       //3rd card
       <div className="py-5">
-        <a href="/view" className="text-decoration-none">
+        <a href="" onClick={viewchallenge} className="text-decoration-none">
           <Card style={{ width: "20rem" }}>
             <Card.Img
               variant="top"
@@ -140,7 +145,7 @@ function Events() {
       </div>
       //4th card
       <div className="py-5">
-        <a href="/view" className="text-decoration-none">
+        <a href="" onClick={viewchallenge} className="text-decoration-none">
           <Card style={{ width: "20rem" }}>
             <Card.Img
               variant="top"
