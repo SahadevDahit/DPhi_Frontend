@@ -4,6 +4,7 @@ import About from "./components/about";
 import Services from "./components/services";
 import Search from "./components/search";
 import Events from "./components/events";
+import Servicelist from "./db/services.json";
 
 function App() {
   return (

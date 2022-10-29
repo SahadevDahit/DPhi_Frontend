@@ -1,10 +1,10 @@
 import React from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import Form from "react-bootstrap/Form";
-const search = () => {
-  const eventtype = ["All", "Active", "Upcoming", "Past"];
-  const level = ["Easy", "Medium", "Hard"];
-  const selected = ["Upcoming", "Past", "Selected"];
+const search: React.FC = () => {
+  const eventtype: string[] = ["All", "Active", "Upcoming", "Past"];
+  const level: string[] = ["Easy", "Medium", "Hard"];
+  const selected: string[] = ["Upcoming", "Past", "Selected"];
   return (
     <div className="container-fluid">
       <div className="w-100 h-100">

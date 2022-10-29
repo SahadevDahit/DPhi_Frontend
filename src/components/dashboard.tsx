@@ -3,7 +3,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
-const Dashboard = () => {
+const Dashboard: React.FC = () => {
   let navigate = useNavigate();
   const createChallenge = () => {
     navigate("/createChallenge");
