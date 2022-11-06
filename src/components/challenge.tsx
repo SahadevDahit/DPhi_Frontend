@@ -36,7 +36,7 @@ function Events() {
     }, 1000 * 60);
   }, [controller]);
   const fetch_challenges = async () => {
-    const res = await fetch(`http://localhost:5000/dphi`);
+    const res = await fetch(`https://dphi-backendapp.herokuapp.com/dphi`);
     const data = await res.json();
     setOutput(data);
     setChallenges(data);

@@ -20,10 +20,11 @@ mongoose
 // Middleware
 app.use(express.json());
 app.use(cors());
-// Route
-app.use("/dphi", require("./routes/dphi"));
 app.get('/', (req, res) => {
   res.send('Welcome  to DPhi !!!')
 })
+// Route
+app.use("/dphi", require("./routes/dphi"));
 
-app.listen(5000, () => console.log("Server is running"));
+
+app.listen(process.env.PORT, () => console.log("Server is running"));

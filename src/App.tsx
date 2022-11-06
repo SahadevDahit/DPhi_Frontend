@@ -1,7 +1,6 @@
 import React from "react";
 import Dashboard from "./components/dashboard";
 import About from "./components/about";
-import Services from "./components/services";
 import Events from "./components/challenge";
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
       >
         <Dashboard />
         <About />
-        <Services />
         <Events />
       </div>
     </>

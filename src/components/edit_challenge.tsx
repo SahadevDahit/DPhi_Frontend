@@ -12,7 +12,7 @@ const Edit_challenge = () => {
   const [loading, setloading] = useState<any>("false");
   const { _id } = useParams();
   useEffect(() => {
-    fetch(`http://localhost:5000/dphi/${_id}`)
+    fetch(`https://dphi-backendapp.herokuapp.com/dphi/${_id}`)
       .then((res) => res.json())
       .then((data) => {
         setChallenges(data);
@@ -35,10 +35,13 @@ const Edit_challenge = () => {
         formData.append("endDate", challenges.endDate);
         formData.append("description", challenges.description);
         formData.append("levelType", challenges.levelType);
-        const res = await fetch(`http://localhost:5000/dphi/${_id}`, {
-          method: "PUT",
-          body: formData,
-        });
+        const res = await fetch(
+          `https://dphi-backendapp.herokuapp.com/dphi/${_id}`,
+          {
+            method: "PUT",
+            body: formData,
+          }
+        );
         if (res.ok) {
           console.log("sucess to update");
           alert("sucessfully Updated");

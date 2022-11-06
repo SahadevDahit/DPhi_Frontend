@@ -34,7 +34,7 @@ const Createchallenge = () => {
         formData.append("description", formdata.description);
         formData.append("levelType", formdata.levelType);
 
-        const res = await fetch(`http://localhost:5000/dphi`, {
+        const res = await fetch(`https://dphi-backendapp.herokuapp.com/dphi`, {
           method: "POST",
           body: formData,
         });

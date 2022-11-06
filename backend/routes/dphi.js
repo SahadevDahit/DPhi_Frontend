@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const cloudinary = require("../utils/cloudinary");
 const upload = require("../utils/multer");
-const Dphi = require("../model/DPhi");
+const Dphi = require("../model/dphi");
 
 router.post("/", upload.single("image"), async (req, res) => {
   try {

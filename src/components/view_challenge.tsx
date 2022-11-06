@@ -12,7 +12,7 @@ const Events_details = () => {
   const notify = () => toast.info("Wait deleting...");
 
   useEffect(() => {
-    fetch(`http://localhost:5000/dphi/${_id}`)
+    fetch(`https://dphi-backendapp.herokuapp.com/dphi/${_id}`)
       .then((res) => res.json())
       .then((data) => {
         setChallenges(data);
@@ -22,9 +22,12 @@ const Events_details = () => {
   const handledelete = async () => {
     try {
       notify();
-      const res = await fetch(`http://localhost:5000/dphi/${_id}`, {
-        method: "DELETE",
-      });
+      const res = await fetch(
+        `https://dphi-backendapp.herokuapp.com/dphi/${_id}`,
+        {
+          method: "DELETE",
+        }
+      );
       if (res.ok) {
         navigate("/");
         alert("Sucessfully Deleted");
