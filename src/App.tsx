@@ -2,9 +2,7 @@ import React from "react";
 import Dashboard from "./components/dashboard";
 import About from "./components/about";
 import Services from "./components/services";
-import Search from "./components/search";
-import Events from "./components/events";
-import Servicelist from "./db/services.json";
+import Events from "./components/challenge";
 
 function App() {
   return (
@@ -24,7 +22,6 @@ function App() {
         <Dashboard />
         <About />
         <Services />
-        <Search />
         <Events />
       </div>
     </>
