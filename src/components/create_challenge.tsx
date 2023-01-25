@@ -40,8 +40,8 @@ const Createchallenge = () => {
         };
         notify();
 
-        // await fetch(`${process.env.REACT_APP_BACKEND_URL}/dphi`, {
-        await fetch(`http://localhost:4000/dphi`, {
+         await fetch(`${process.env.REACT_APP_BACKEND_URL}/dphi`, {
+//         await fetch(`http://localhost:4000/dphi`, {
           mode: "no-cors",
           // credentials: "include",
           method: "POST",
