@@ -25,7 +25,6 @@ const Createchallenge = () => {
           image !== undefined) ||
         ""
       ) {
-        notify();
         let formData = new FormData();
         formData.append("image", image[0]);
         formData.append("challengeName", formdata.challengeName);
@@ -34,13 +33,23 @@ const Createchallenge = () => {
         formData.append("description", formdata.description);
         formData.append("levelType", formdata.levelType);
 
-        const res = await fetch(`https://dphi-backendapp.herokuapp.com/dphi`, {
+        const headers = {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "POST,PATCH,OPTIONS",
+        };
+        notify();
+
+        // await fetch(`${process.env.REACT_APP_BACKEND_URL}/dphi`, {
+        await fetch(`http://localhost:4000/dphi`, {
+          mode: "no-cors",
+          // credentials: "include",
           method: "POST",
+          headers: headers,
           body: formData,
-        });
-        if (res.ok) {
-          alert("Sucessfully created");
-        }
+        })
+          .then((res) => alert("Sucessfully created...."))
+          .catch((err) => console.log(err));
       } else {
         alert("End Date can't be earlier than startDate or select Image");
       }

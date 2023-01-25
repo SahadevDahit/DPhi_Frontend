@@ -12,7 +12,7 @@ const Events_details = () => {
   const notify = () => toast.info("Wait deleting...");
 
   useEffect(() => {
-    fetch(`https://dphi-backendapp.herokuapp.com/dphi/${_id}`)
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/dphi/${_id}`)
       .then((res) => res.json())
       .then((data) => {
         setChallenges(data);
@@ -23,7 +23,7 @@ const Events_details = () => {
     try {
       notify();
       const res = await fetch(
-        `https://dphi-backendapp.herokuapp.com/dphi/${_id}`,
+        `${process.env.REACT_APP_BACKEND_URL}/dphi/${_id}`,
         {
           method: "DELETE",
         }

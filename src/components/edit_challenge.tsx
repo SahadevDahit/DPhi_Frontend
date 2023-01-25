@@ -12,7 +12,7 @@ const Edit_challenge = () => {
   const [loading, setloading] = useState<any>("false");
   const { _id } = useParams();
   useEffect(() => {
-    fetch(`https://dphi-backendapp.herokuapp.com/dphi/${_id}`)
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/dphi/${_id}`)
       .then((res) => res.json())
       .then((data) => {
         setChallenges(data);
@@ -36,7 +36,7 @@ const Edit_challenge = () => {
         formData.append("description", challenges.description);
         formData.append("levelType", challenges.levelType);
         const res = await fetch(
-          `https://dphi-backendapp.herokuapp.com/dphi/${_id}`,
+          `${process.env.REACT_APP_BACKEND_URL}/dphi/${_id}`,
           {
             method: "PUT",
             body: formData,
