@@ -35,7 +35,6 @@ function Events() {
       setcontroller(controller + 1);
     }, 1000 * 60);
   }, [controller]);
-  console.log(process.env.REACT_APP_BACKEND_URL);
   const fetch_challenges = async () => {
     const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/dphi`);
     const data = await res.json();

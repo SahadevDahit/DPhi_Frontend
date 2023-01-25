@@ -3,14 +3,8 @@ const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
-var bodyParser = require('body-parser')
 dotenv.config();
-// app.use(bodyParser.json());
 
-// //support parsing of application/x-www-form-urlencoded post data
-// app.use(bodyParser.urlencoded({
-//   extended: true
-// }));
 app.use(express.json());
 const corsOptions = {
   origin: '*',
